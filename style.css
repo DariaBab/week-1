@@ -1,111 +1,146 @@
-* {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Exercise 0 */
-  
-  .container {
-    background: red;
+.margin {
+  margin-bottom: 100px;
+}
+
+/* 1. Present */
+
+.container {
+  width: 300px;
+  height: 300px;
+  background: blue;
+  position: relative;
+}
+
+.general {
+  background: red;
+  position: absolute;
+}
+
+.line1 {
+  width: 300px;
+  height: 15px;
+  top: 50px;
+}
+
+.line2 {
+  width: 15px;
+  height: 300px;
+  left: 50px;
+}
+
+/* 2. Graph */
+
+.graph-container {
+  width: 600px;
+  height: 300px;
+  background: violet;
+  font-weight: bold;
+  position: relative;
+  padding: 10px;
+}
+
+.graph-container > div {
+  width: 50px;
+  background: lightgrey;
+  position: absolute;
+  bottom: 10px;
+}
+
+.column1 {
+  height: 50px;
+}
+
+.column2 {
+  height: 150px;
+  left: 90px;
+}
+
+.column3 {
+  height: 280px;
+  left: 170px;
+}
+
+.column4 {
+  height: 240px;
+  left: 250px;
+}
+
+.column5 {
+  height: 200px;
+  left: 330px;
+}
+
+.column6 {
+  height: 100px;
+  left: 410px;
+}
+
+.time {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+}
+
+/* 3. Magnet */
+
+.magnet {
+    width: 350px;
+    height: 300px;
     position: relative;
-    width: 400px;
-    height: 400px;
-  }
-  
-  .container div:nth-child(1) {
-    position: absolute;
-    background: blue;
-    width: 130px;
-    height: 130px;
-    left: 0;
-  }
-  
-  .container div:nth-child(2) {
-    position: absolute;
-    background: green;
-    width: 130px;
-    height: 130px;
-    right: 0;
-  }
-  
-  .container div:nth-child(3) {
-    position: absolute;
-    background: violet;
-    width: 130px;
-    height: 130px;
-    bottom: 0;
-    right: 0;
-  }
-  
-  .container div:nth-child(4) {
-    position: absolute;
-    background: yellow;
-    width: 130px;
-    height: 130px;
-    bottom: 0;
-    left: 0;
-  }
-  
-  .container div:nth-child(5) {
-    position: absolute;
-    background: white;
-    width: 130px;
-    height: 130px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  /* Exercise 1 */
-  
-  h2 {
-    margin-top: 50px;
-  }
-  
-  .ex_one {
-    width: 200px;
+    border-radius: 15px;
+}
+
+.gray {
+    background: lightgray;
     height: 100px;
-    background: pink;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  /* Exercise 2 */
-  
-  header {
-    width: 100%;
-    height: 50px;
-    background: #868686;
-    position: fixed;
-  }
-  
-  header div {
-    display: inline-block;
-    font-size: 18px;
-    font-weight: bold;
-    margin: 15px;
-  }
-  
-  .text {
-    font-size: 20px;
-  }
-  
-  /* Exercise 3 */
-  
-  footer {
-    width: 100%;
-    height: 50px;
-    background: #232323;
-    color: white;
-    position: fixed;
-    bottom: 0;
-  }
-  
-  footer div {
-    display: inline-block;
-    font-size: 18px;
-    font-weight: bold;
-    margin: 15px;
-  }
-  
+    width: 75px;
+    border-radius: 5px 5px 0 0;
+}
+
+.right {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.red {
+    background: red;
+    height: 200px;
+    border-radius: 0 0 15px 15px;
+}
+
+.white {
+    background: rgb(255, 255, 255);
+    width: 200px;
+    height: 220px;
+    position: absolute;
+    left: 75px;
+    top: 0;
+    border-radius: 0 0 15px 15px;
+}
+
+
+/* 4. Chocolate */
+
+.chocolate {
+    width: 370px;
+    background: black;
+    padding: 5px;
+}
+
+.flex {
+    display: flex;
+    gap: 5px;
+}
+
+.flex > div {
+    background: #66320E;
+    width: 90px;
+    height: 90px;
+}
+
+.line {
+    height: 5px;
+    background: darkred;
+    margin: 5px 0 5px 0;
+}

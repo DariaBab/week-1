@@ -1,0 +1,36 @@
+body {
+  background: #ddd;
+}
+
+nav {
+  background: rgb(51, 51, 51);
+}
+
+li:nth-child(1) {
+    background: green;
+}
+
+.hero-image {
+    width: 50%;
+}
+
+.box {
+    width: 100px;
+    height: 100px; 
+    display: inline-block;
+    border: 1px solid black;
+}
+
+#first {
+    background: lightseagreen;
+}
+
+#second {
+    background: orange;
+}
+
+.button {
+    background: lightseagreen;
+    border: 1px solid green;
+}
+

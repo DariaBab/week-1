@@ -1,146 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .margin {
   margin-bottom: 100px;
 }
 
-/* 1. Present */
+/* 3. Spot Check 1 */
 
 .container {
-  width: 300px;
-  height: 300px;
-  background: blue;
-  position: relative;
+  width: 800px;
+  height: 600px;
+  display: grid;
+  grid-template-areas:
+    "yellow gray orange"
+    "yellow . orange"
+    "yellow green orange";
 }
 
-.general {
-  background: red;
-  position: absolute;
-}
-
-.line1 {
-  width: 300px;
-  height: 15px;
-  top: 50px;
-}
-
-.line2 {
-  width: 15px;
-  height: 300px;
-  left: 50px;
-}
-
-/* 2. Graph */
-
-.graph-container {
-  width: 600px;
-  height: 300px;
-  background: violet;
-  font-weight: bold;
-  position: relative;
-  padding: 10px;
-}
-
-.graph-container > div {
-  width: 50px;
-  background: lightgrey;
-  position: absolute;
-  bottom: 10px;
-}
-
-.column1 {
-  height: 50px;
-}
-
-.column2 {
-  height: 150px;
-  left: 90px;
-}
-
-.column3 {
-  height: 280px;
-  left: 170px;
-}
-
-.column4 {
-  height: 240px;
-  left: 250px;
-}
-
-.column5 {
-  height: 200px;
-  left: 330px;
-}
-
-.column6 {
-  height: 100px;
-  left: 410px;
-}
-
-.time {
-    position: absolute;
-    right: 10px;
-    bottom: 0;
-}
-
-/* 3. Magnet */
-
-.magnet {
-    width: 350px;
-    height: 300px;
-    position: relative;
-    border-radius: 15px;
+.yellow {
+  background: yellow;
+  grid-area: yellow;
 }
 
 .gray {
-    background: lightgray;
-    height: 100px;
-    width: 75px;
-    border-radius: 5px 5px 0 0;
+  background: gray;
+  grid-area: gray;
+}
+
+.green {
+  background: lightgreen;
+  grid-area: green;
+}
+
+.orange {
+  background: orange;
+  grid-area: orange;
+}
+
+/* 9. Exercises */
+
+html {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  height: 100%;
+  background-color: red;
+}
+
+.side-menu {
+  height: 100%;
+  background: rgb(62, 31, 62);
+  color: rgb(229, 216, 216);
+  display: grid;
+  padding: 20px 10px 0 10px;
+}
+
+.dialog-window {
+  height: 100%;
+  background: lightgray;
+  display: grid;
+  grid-template-rows: 1fr 70px;
+}
+
+.friends-list {
+  display: grid;
+  align-content: space-around;
+  gap: 80px;
+}
+
+.friends-list > div {
+  background: rgb(80, 43, 80);
+  padding: 10px;
+}
+
+.dialog {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px 10px;
+}
+
+.left {
+  display: grid;
+}
+
+.left > div {
+  background-color: gray;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 2px;
+  height: fit-content;
+  line-height: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 18px;
+}
+
+.left div p:nth-child(2) {
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: end;
 }
 
 .right {
-    position: absolute;
-    right: 0;
-    top: 0;
+  display: grid;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
-.red {
-    background: red;
-    height: 200px;
-    border-radius: 0 0 15px 15px;
+.right > div {
+  background-color: lightgreen;
+  padding: 10px;
+  border-radius: 2px;
+  line-height: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 18px;
 }
 
-.white {
-    background: rgb(255, 255, 255);
-    width: 200px;
-    height: 220px;
-    position: absolute;
-    left: 75px;
-    top: 0;
-    border-radius: 0 0 15px 15px;
+.right div p:nth-child(2) {
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: end;
 }
 
-
-/* 4. Chocolate */
-
-.chocolate {
-    width: 370px;
-    background: black;
-    padding: 5px;
+.type-window {
+  height: 70px;
+  display: grid;
+  grid-template-columns: 1fr 200px;
 }
 
-.flex {
-    display: flex;
-    gap: 5px;
+.type-window div {
+  background: white;
+  color: gray;
+  border-top: 1px solid gray;
+  display: flex;
+  align-items: center;
+  padding-inline-start: 10px;
 }
 
-.flex > div {
-    background: #66320E;
-    width: 90px;
-    height: 90px;
-}
-
-.line {
-    height: 5px;
-    background: darkred;
-    margin: 5px 0 5px 0;
+button {
+  background: rgb(80, 43, 80);
+  color: rgb(229, 216, 216);
+  width: 200px;
+  border: none;
 }

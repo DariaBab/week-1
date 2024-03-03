@@ -5,64 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
   </head>
 
   <body>
-    <!-- 3. Spot Check 1 -->
-
-    <!-- <h1>3. Spot Check 1</h1>
-    <div class="container margin">
-      <div class="yellow"></div>
-      <div class="gray"></div>
-      <div class="orange"></div>
-      <div class="green"></div>
-    </div> -->
-
-    <!-- 9. Exercises -->
-
-    <div class="side-menu">
-      <p>Friends</p>
-      <div class="friends-list">
-        <div>Freya</div>
-        <div>Linda</div>
-        <div>Kenan</div>
-        <div>Theresa</div>
+    <header>
+      <nav class="left-container">
+        <ul>
+          <li>
+            <i class="fa-solid fa-house" style="color: #737c85"></i>
+            <p>Home</p>
+          </li>
+          <li>
+            <i class="fa-solid fa-bell" style="color: #737c85"></i>
+            <p>Notifications</p>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope" style="color: #737c85"></i>
+            <p>Messages</p>
+          </li>
+        </ul>
+      </nav>
+      <div><i class="fa-brands fa-twitter" style="color: #7aa8e2"></i></div>
+      <div class="right-container">
+        <div class="search">
+          <input type="search" placeholder="Search on Twitter" />
+          <i class="fa-solid fa-magnifying-glass" style="color: #737c85"></i>
+        </div>
+        <img src="./img/avatar.jpg" alt="" />
+        <button>Tweet</button>
       </div>
-    </div>
-    <div class="dialog-window">
-      <div class="dialog">
-        <div class="left">
-          <div>
-            <p>Hey</p>
-            <p>14:00</p>
+    </header>
+    <main>
+      <div>
+        <div class="banner">
+          <p>Twitter Banner</p>
+        </div>
+        <div class="container">
+          <div class="information-container">
+            <div class="img">
+              <img src="./img/avatar.jpg" alt="" />
+            </div>
+            <ul>
+              <li>
+                <p>Followings</p>
+                <p>645</p>
+              </li>
+              <li>
+                <p>Followers</p>
+                <p>84</p>
+              </li>
+              <li>
+                <p>Favorites</p>
+                <p>98</p>
+              </li>
+            </ul>
           </div>
           <div>
-            <p>Hello?</p>
-            <p>14:31</p>
-          </div>
-          <div class="left">
-            <p>You work too much</p>
-            <p>17:59</p>
+            <button>Follow</button>
+            <i class="fa-solid fa-ellipsis-vertical" style="color: #737c85"></i>
           </div>
         </div>
-
-        <div class="right">
-          <div class="right">
-            <p>Sorry, been busy</p>
-            <p>17:58</p>
-          </div>
-          <div class="right">
-            <p>Tell me about it</p>
-            <p>17:59</p>
-          </div>
-        </div>
       </div>
-      <div class="type-window">
-        <div class="type">Type a message</div>
-        <button>SEND</button>
-      </div>
-    </div>
-
+    </main>
     <script src="./script.js"></script>
   </body>
 </html>

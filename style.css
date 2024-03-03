@@ -1,156 +1,127 @@
+/* main style */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-.margin {
-  margin-bottom: 100px;
-}
-
-/* 3. Spot Check 1 */
-
-.container {
-  width: 800px;
-  height: 600px;
-  display: grid;
-  grid-template-areas:
-    "yellow gray orange"
-    "yellow . orange"
-    "yellow green orange";
-}
-
-.yellow {
-  background: yellow;
-  grid-area: yellow;
-}
-
-.gray {
-  background: gray;
-  grid-area: gray;
-}
-
-.green {
-  background: lightgreen;
-  grid-area: green;
-}
-
-.orange {
-  background: orange;
-  grid-area: orange;
-}
-
-/* 9. Exercises */
-
-html {
-  height: 100%;
-}
-
-body {
-  display: grid;
-  grid-template-columns: 300px 1fr;
-  height: 100%;
-  background-color: red;
-}
-
-.side-menu {
-  height: 100%;
-  background: rgb(62, 31, 62);
-  color: rgb(229, 216, 216);
-  display: grid;
-  padding: 20px 10px 0 10px;
-}
-
-.dialog-window {
-  height: 100%;
-  background: lightgray;
-  display: grid;
-  grid-template-rows: 1fr 70px;
-}
-
-.friends-list {
-  display: grid;
-  align-content: space-around;
-  gap: 80px;
-}
-
-.friends-list > div {
-  background: rgb(80, 43, 80);
-  padding: 10px;
-}
-
-.dialog {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 20px 10px;
-}
-
-.left {
-  display: grid;
-}
-
-.left > div {
-  background-color: gray;
-  width: fit-content;
-  padding: 5px 10px;
-  border-radius: 2px;
-  height: fit-content;
-  line-height: 30px;
+/* style of header elements */
+header {
+  height: 50px;
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  font-size: 18px;
-}
-
-.left div p:nth-child(2) {
-  font-size: 12px;
-  line-height: 16px;
-  display: flex;
-  align-items: end;
-}
-
-.right {
-  display: grid;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-
-.right > div {
-  background-color: lightgreen;
-  padding: 10px;
-  border-radius: 2px;
-  line-height: 30px;
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  font-size: 18px;
-}
-
-.right div p:nth-child(2) {
-  font-size: 12px;
-  line-height: 16px;
-  display: flex;
-  align-items: end;
-}
-
-.type-window {
-  height: 70px;
-  display: grid;
-  grid-template-columns: 1fr 200px;
-}
-
-.type-window div {
   background: white;
-  color: gray;
-  border-top: 1px solid gray;
-  display: flex;
+  justify-content: space-evenly;
   align-items: center;
-  padding-inline-start: 10px;
 }
 
-button {
-  background: rgb(80, 43, 80);
-  color: rgb(229, 216, 216);
-  width: 200px;
+.right-container img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.left-container ul {
+  list-style-type: none;
+  display: flex;
+  font-size: 14px;
+  gap: 25px;
+  color: #737c85;
+}
+
+.left-container ul li {
+  display: flex;
+  gap: 5px;
+  line-height: 18px;
+  align-content: center;
+}
+
+.right-container button {
+  width: 100px;
   border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  background: rgb(119, 180, 219);
+}
+
+.right-container {
+  display: flex;
+  gap: 15px;
+}
+
+.search {
+  border: 1px solid gray;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 20px;
+  background: rgb(247, 248, 250);
+}
+
+.search input {
+  border: none;
+  background: transparent;
+}
+
+/* style of banner element */
+.banner {
+  height: 350px;
+  color: white;
+  font-size: 34px;
+  font-weight: bold;
+  background: rgb(119, 180, 219);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* style of information-container elements */
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  color: #737c85;
+}
+
+.information-container {
+  display: flex;
+  gap: 10px;
+}
+
+.information-container ul {
+  display: flex;
+  gap: 25px;
+  list-style-type: none;
+}
+
+.information-container li p:nth-child(2) {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.img {
+  width: 180px;
+  position: relative;
+}
+
+.information-container img {
+  position: absolute;
+  width: 180px;
+  border-radius: 50%;
+  border: 3px solid white;
+  top: -60px;
+}
+
+.container button {
+  width: 100px;
+  height: 40px;
+  border: 1px solid rgb(119, 180, 219);
+  color: rgb(119, 180, 219);
+  font-weight: bold;
+  border-radius: 20px;
+  background: rgb(239, 239, 239);
+  margin-right: 20px;
 }
